@@ -1,0 +1,131 @@
+
+/* Color Theme Swatches in Hex */
+.Fine-Day-for-Sailing-1-hex { color: #01415B; }
+.Fine-Day-for-Sailing-2-hex { color: #005148; }
+.Fine-Day-for-Sailing-3-hex { color: #019587; }
+.Fine-Day-for-Sailing-4-hex { color: #A6BC09; }
+.Fine-Day-for-Sailing-5-hex { color: #CCEA8D; }
+
+/* Color Theme Swatches in RGBA */
+.Fine-Day-for-Sailing-1-rgba { color: rgba(1, 65, 91, 1); }
+.Fine-Day-for-Sailing-2-rgba { color: rgba(0, 80, 72, 1); }
+.Fine-Day-for-Sailing-3-rgba { color: rgba(1, 149, 135, 1); }
+.Fine-Day-for-Sailing-4-rgba { color: rgba(165, 188, 8, 1); }
+.Fine-Day-for-Sailing-5-rgba { color: rgba(204, 233, 140, 1); }
+
+/* Color Theme Swatches in HSLA */
+.Fine-Day-for-Sailing-1-hsla { color: hsla(197, 97, 18, 1); }
+.Fine-Day-for-Sailing-2-hsla { color: hsla(173, 100, 15, 1); }
+.Fine-Day-for-Sailing-3-hsla { color: hsla(174, 98, 29, 1); }
+.Fine-Day-for-Sailing-4-hsla { color: hsla(67, 90, 38, 1); }
+.Fine-Day-for-Sailing-5-hsla { color: hsla(79, 68, 73, 1); }
+
+/*--------------------------------------------------*/
+
+/* FONTS */
+@font-face { /* Se utiliza cuando tenemos la fuentes instalada */
+    font-family: Fuentes1;
+    src: url() /*url de nuestra fuente en nuestra pc */ 
+}
+
+html {
+    font-family: 'Nunito', sans-serif;
+}
+
+/*-----------------------------------------------------------------------*/
+
+/* Agregamos el fondo más grande que está detrás de nuestro 
+elemento principal (todo lo que está detrás de "Las mejors pizzas"*/
+.container {
+    background:#a1c4fd; /* Respaldo */
+    background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+    /*En este caso, agregamos 100vh a la altura para que el degradado
+    ocupe todo el espacio en la pantalla. (vw para el ancho) */
+    height: 100vh; 
+    display: flex; /* flexbox */
+    align-items: center;
+    justify-content: center;
+}
+
+/* Aquí asignamos dimensiones al elemento div con la clase content,
+por lo que asignamos un ancho y una altura.
+Es decir, agregamos todo lo que está dentro de "Las mejores pizzas".
+El content va a estirarse todo lo que pueda sin romper los limites
+establecidos.
+Además, le agregamos como color de fondo el color blanco.*/
+.content {
+    max-width: 960px;
+    max-height: 500px;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+}
+
+/*-------------------------------------------------------*/
+
+p {
+    color: red;
+}
+.red {
+    height: 200px;
+    width: 100px;
+    background-color: #228b22;
+    color: white
+}
+#boton-pago {
+    background-color: yellow;
+}
+
+/*----------Empieza la parte de "Las mejores pizzas"------*/
+td {
+   /* border: 1px solid; */
+    height: auto;
+}
+
+/* modificamos la línea que está debajo del
+link "Ver más de D´rulos.*/
+a {
+    text-decoration: none;
+    color: #019587; ;
+}
+
+/* Hacemos que cada letra del texto "Las mejores pizzas de mi Ciudad"
+sea la primera letra mayuscula  */ 
+.tittle {
+    text-transform: capitalize;
+}
+
+/*---- Modificaciones a la tabla (Estirilizar) ------*/
+
+.table{
+    width: 100%;
+    border-spacing: 0;
+}
+
+.table td, .table th {
+    padding: 1em;
+    text-align: left;
+    
+}
+
+.table tr:nth-child(even){
+    background-color: #e2eec8;
+}
+/* Estrellas */
+.fa-star {  
+    color:#A6BC09;
+}
+
+
+
+/*-------------------------------------------------------------------------------------*/
+/* PÁGINA DE D´RULOS */
+
+/* Se agregan modificaciones a los párrafos con esta clase*/
+.paragraph {
+    line-height: 1.8em ; /*Interlineado*/
+    font-weight: 300; /*Tamaño de la letra*/
+}
+
+
+

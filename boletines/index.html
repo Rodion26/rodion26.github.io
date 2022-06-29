@@ -4,23 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        p {
-            color: red;
-        }
-        .red {
-            height: 200px;
-            width: 100px;
-            background-color: #228b22;
-            color: white
-        }
-        #boton-pago {
-            background-color: yellow;
-        }
-    </style>
+    <title>Documento de aprendizaje 1</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="./font-awesome/css/all.min.css" rel="stylesheet">
+    <link href="./assets/css/normalize.css" rel="stylesheet">
+    <link href="./assets/css/main.css" rel="stylesheet">
 </head>
 <body>
+<!-- Desde aquí, estamos agregando css a nuestros elementos.-->
     <button id="boton-pago" type="button" name="button">
         pagar xd
 
@@ -31,5 +22,69 @@
     <p> Hola que hace, esto supuestamente 
         tiene que estar en rojo xd
     </p>
+<!--Desde aquí, empezamos con el desarrollo de una nueva 
+página web (aprendizaje y desarrollo de "boletines"), por lo que
+vamos a agregar nuevos elementos.-->
+
+<div class="container">
+    <div class="content">
+        <header>
+            <h1 class="tittle"> Las mejores pizzas de mi ciudad. </h1>
+        </header>
+        <!--Desde aquí se aplican tablas-->
+        <table class="table">
+            <thead>
+                <th>#</th>
+                <th>Nombre</th>
+                <th>Ubicación</th>
+                <th>Calificaciones</th>
+                <th>Acciones</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Di' rulo</td>
+                    <td>Av. 5 de junio</td>
+                    <td><i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i></td>
+                    <td>
+                        <a href="./Restaurantes/D'rulos.html" target="_blank">Ver más de D'rulos</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>El hornero</td>
+                    <td>Centro comercial, Atahualpa</td>
+                    <td>
+                        <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    
+                    </td>
+                    <td>...</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Papa Jhons</td>
+                    <td>Michelena</td>
+                    <td><i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i> <i class=" far fa-star"></i> <i class=" far fa-star"></i>
+                    
+                    </td> 
+                    <td>...</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Pizzas vecina</td>
+                    <td>La Magdalena</td>
+                    <td><i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class=" far fa-star"></i>
+                    </td>
+                    <td>...</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+</div>
 </body>
 </html>
